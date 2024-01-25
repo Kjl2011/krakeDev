@@ -13,6 +13,8 @@ saludar=function(){
     mostrarTexto("lblResultado",mensajeBienvenida);
     //Aplico una imagen para la bienvenida
     mostrarImagen("imgSaludo","./imagenes/imgG.gif");
+    //Se aplica un borrador de la caja de txtNombre
+    mostrarTextoCaja("txtNombre","")
 }
 
 
@@ -29,6 +31,13 @@ mostrarTexto=function(idComponente,mensaje){
 
     componente=document.getElementById(idComponente);
     componente.innerText=mensaje;
+}
+
+mostrarTextoCaja=function(idComponente,mensaje){
+    let componente;
+
+    componente=document.getElementById(idComponente);
+    componente.value=mensaje;
 }
 
 

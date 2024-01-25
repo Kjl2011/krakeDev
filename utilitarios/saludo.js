@@ -11,7 +11,18 @@ saludar=function(){
     let mensajeBienvenida="Bienvenido "+nombre+" "+apellido;
     //Aplico la funcion Mostrar Texto
     mostrarTexto("lblResultado",mensajeBienvenida);
+    //Aplico una imagen para la bienvenida
+    mostrarImagen("imgSaludo","./imagenes/imgG.gif");
 }
+
+
+mostrarImagen=function(idComponente,rutaImagen){
+    let componente
+    componente=document.getElementById(idComponente);
+    componente.src=rutaImagen;
+ }
+
+
 
 mostrarTexto=function(idComponente,mensaje){
     let componente;
@@ -20,6 +31,7 @@ mostrarTexto=function(idComponente,mensaje){
     componente.innerText=mensaje;
 }
 
+
 recuperarTexto=function(idComponente){
     let componente;
     let valorIngresado;
@@ -27,6 +39,7 @@ recuperarTexto=function(idComponente){
     valorIngresado=componente.value;
     return valorIngresado;
 }
+
 
 recuperarInt=function(idComponente){
     let valorCaja= recuperarTexto(idComponente);

@@ -81,5 +81,23 @@ limpiar=function(){
         Dejar todos los textos de los montos con el valor 0.0
         Si funciona, hacer un commit
      */
+    let producto=document.getElementById("txtProducto");
+    let precio=document.getElementById("txtPrecio");
+    let cantidad=document.getElementById("txtCantidad");
+    let descuento=document.getElementById("txtPorcentajeDescuento");
+    let subtotal=document.getElementById("lblSubtotal");
+    let descuentoo=document.getElementById("lblDescuento");
+    let iva=document.getElementById("lblValorIVA");
+    let total=document.getElementById("lblTotal");
+    let resumen=document.getElementById("lblResumen");
+    producto.value= "0";
+    precio.value= "0";
+    cantidad.value= "0";
+    descuento.value= "0";
+    subtotal,innerText="0";
+    descuentoo.innerText="0";
+    iva.innerText="0";
+    total.innerText="0";
+    resumen.innerText="0";
 }
 /* SI TODO FUNCIONA, HACER UN PUSH */

@@ -19,12 +19,12 @@ jugar=function(){
 
 lanzarDado=function(){
     let aleatorio;
-    let valordeDado;
-    let solounValor;
-    let totalDado;
+    let numeroMultiplicadoo;
+    let numeroEntero;
+    let valorDado;
     aleatorio=Math.random();
-    valordeDado=aleatorio*6;
-    solounValor=parseInt(valordeDado);
-    totalDado=solounValor+1;
-    return totalDado;
+    numeroMultiplicadoo=aleatorio*6;
+    numeroEntero=parseInt(numeroMultiplicadoo);
+    valorDado=numeroEntero+1;
+    return valorDado;
 }

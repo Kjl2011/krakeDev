@@ -16,7 +16,9 @@ mostrarPromedio=function(){
     }
 }
 mostrarGif=function(numero){
-    if(numero>=5 && numero<=8){
+    if(numero>0 && numero<5){
+        cambiarImagen("imgGif","reprobado.gif");
+    }else if(numero>=5 && numero<=8){
         cambiarImagen("imgGif","buentrabajo.gif");
     }else if(numero>8 && numero<=10){
         cambiarImagen("imgGif","excelente.gif");
